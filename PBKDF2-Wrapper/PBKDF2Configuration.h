@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, PBKDF2PseudoRandomFunction) {
 
 NSData * PBKDF2SaltWithLength(NSUInteger length);
 CCPseudoRandomAlgorithm CCPseudoRandomAlgorithmFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pseudoRandomFunction);
+NSString * NSStringFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pseudoRandomFunction);
 
 @interface PBKDF2Configuration : NSObject <NSCopying, NSSecureCoding>
 
