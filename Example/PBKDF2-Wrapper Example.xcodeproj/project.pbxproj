@@ -17,6 +17,8 @@
 		2BE90BF219019AEC0059BC2A /* PBKDF2Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE90BF119019AEC0059BC2A /* PBKDF2Result.m */; };
 		2BE90BF519019B090059BC2A /* PBKDF2Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE90BF419019B090059BC2A /* PBKDF2Configuration.m */; };
 		2BE90C0019025E810059BC2A /* PBKDF2Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE90BFF19025E810059BC2A /* PBKDF2Defaults.m */; };
+		2BE90C0719028A2A0059BC2A /* PWExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE90C0519028A2A0059BC2A /* PWExampleViewController.m */; };
+		2BE90C0819028A2A0059BC2A /* PWExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE90C0619028A2A0059BC2A /* PWExampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		2BE90BF619019BFE0059BC2A /* PBKDF2-Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PBKDF2-Wrapper.h"; sourceTree = "<group>"; };
 		2BE90BFE19025E810059BC2A /* PBKDF2Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2Defaults.h; sourceTree = "<group>"; };
 		2BE90BFF19025E810059BC2A /* PBKDF2Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2Defaults.m; sourceTree = "<group>"; };
+		2BE90C0419028A2A0059BC2A /* PWExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWExampleViewController.h; sourceTree = "<group>"; };
+		2BE90C0519028A2A0059BC2A /* PWExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWExampleViewController.m; sourceTree = "<group>"; };
+		2BE90C0619028A2A0059BC2A /* PWExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWExampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,9 @@
 				2BE90BCC1901999F0059BC2A /* PWAppDelegate.m */,
 				2BE90BCE1901999F0059BC2A /* Images.xcassets */,
 				2BE90BC31901999F0059BC2A /* Supporting Files */,
+				2BE90C0419028A2A0059BC2A /* PWExampleViewController.h */,
+				2BE90C0519028A2A0059BC2A /* PWExampleViewController.m */,
+				2BE90C0619028A2A0059BC2A /* PWExampleViewController.xib */,
 			);
 			path = "PBKDF2-Wrapper Example";
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			files = (
 				2BE90BC71901999F0059BC2A /* InfoPlist.strings in Resources */,
 				2BE90BCF1901999F0059BC2A /* Images.xcassets in Resources */,
+				2BE90C0819028A2A0059BC2A /* PWExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				2BE90BC91901999F0059BC2A /* main.m in Sources */,
 				2BE90BF519019B090059BC2A /* PBKDF2Configuration.m in Sources */,
 				2BE90BF219019AEC0059BC2A /* PBKDF2Result.m in Sources */,
+				2BE90C0719028A2A0059BC2A /* PWExampleViewController.m in Sources */,
 				2BE90BCD1901999F0059BC2A /* PWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
