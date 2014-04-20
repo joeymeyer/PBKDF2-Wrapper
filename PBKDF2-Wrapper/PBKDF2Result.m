@@ -90,9 +90,9 @@
   return [NSString stringWithFormat:@"<%@: %p, configuration: %@, derivedKey: %@>", NSStringFromClass([self class]), self, self.configuration, self.derivedKey];
 }
 
-#pragma mark - Overridden Properties
+#pragma mark - Public Methods
 
-- (NSData *)derivedKey {
+- (void)calculateDerivedKey {
   dispatch_once(&_derivedKeyOnceToken, ^{
     unsigned char derivedKeyBytes[self.configuration.derivedKeyLength];
     
@@ -111,6 +111,12 @@
     
     _derivedKey = [NSData dataWithBytes:derivedKeyBytes length:self.configuration.derivedKeyLength];
   });
+}
+
+#pragma mark - Overridden Properties
+
+- (NSData *)derivedKey {
+  [self calculateDerivedKey];
   
   return [_derivedKey copy];
 }

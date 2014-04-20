@@ -15,6 +15,8 @@
 
 @property(nonatomic,copy,readonly) NSData *derivedKey;
 
+- (void)calculateDerivedKey;
+
 - (instancetype)initWithPassword:(NSString *)password;
 
 - (instancetype)initWithPassword:(NSString *)password
