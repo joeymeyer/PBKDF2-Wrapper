@@ -195,7 +195,7 @@ NSString * NSStringFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pse
 #pragma mark - NSCopying
 
 - (id)copyWithZone:(NSZone *)zone {
-  return [[[self class] allocWithZone:zone] initWithSalt:self.salt
+  return [[[self class] allocWithZone:zone] initWithSalt:[self.salt copyWithZone:zone]
                                         derivedKeyLength:self.derivedKeyLength
                                                   rounds:self.rounds
                                     pseudoRandomFunction:self.pseudoRandomFunction];
