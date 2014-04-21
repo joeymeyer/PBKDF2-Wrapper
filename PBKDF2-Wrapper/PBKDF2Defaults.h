@@ -12,4 +12,5 @@
 extern NSUInteger PBKDF2DefaultDerivedKeyLength;
 extern NSUInteger PBKDF2DefaultDelayInMilliseconds;
 extern NSUInteger PBKDF2DefaultSaltLength;
+extern NSUInteger PBKDF2DefaultRounds;
 extern PBKDF2PseudoRandomFunction PBKDF2DefaultPseudoRandomFunction;

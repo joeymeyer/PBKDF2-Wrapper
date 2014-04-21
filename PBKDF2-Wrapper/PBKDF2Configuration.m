@@ -113,7 +113,7 @@ NSString * NSStringFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pse
 - (instancetype)init {
   return [self initWithDerivedKeyLength:PBKDF2DefaultDerivedKeyLength
                              saltLength:PBKDF2DefaultSaltLength
-                                 rounds:1000
+                                 rounds:PBKDF2DefaultRounds
                    pseudoRandomFunction:PBKDF2DefaultPseudoRandomFunction];
 }
 
