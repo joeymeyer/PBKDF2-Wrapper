@@ -34,6 +34,7 @@ NSString * NSStringFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pse
 - (instancetype)initWithPasswordLength:(NSUInteger)passwordLength
                       derivedKeyLength:(NSUInteger)derivedKeyLength
                             saltLength:(NSUInteger)saltLength
+                  pseudoRandomFunction:(PBKDF2PseudoRandomFunction)pseudoRandomFunction
           estimatedDelayInMilliseconds:(uint32_t)delayInMilliseconds;
 
 - (instancetype)initWithDerivedKeyLength:(NSUInteger)derivedKeyLength
