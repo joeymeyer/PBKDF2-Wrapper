@@ -36,19 +36,20 @@
   PBKDF2Configuration *configuration = [[PBKDF2Configuration alloc] initWithPasswordLength:password.length
                                                                           derivedKeyLength:derivedKeyLength
                                                                                 saltLength:PBKDF2DefaultSaltLength
+                                                                      pseudoRandomFunction:PBKDF2DefaultPseudoRandomFunction
                                                               estimatedDelayInMilliseconds:PBKDF2DefaultDelayInMilliseconds];
   
   return [self initWithPassword:password configuration:configuration];
 }
 
-- (instancetype)initWithPassword:(NSString *)password
-                   configuration:(PBKDF2Configuration *)configuration {
+- (instancetype)initWithPassword:(NSString *)password configuration:(PBKDF2Configuration *)configuration {
   self = [super init];
   if (self) {
     self.password = password;
     self.configuration = configuration ?: [[PBKDF2Configuration alloc] initWithPasswordLength:password.length
                                                                              derivedKeyLength:PBKDF2DefaultDerivedKeyLength
                                                                                    saltLength:PBKDF2DefaultSaltLength
+                                                                         pseudoRandomFunction:PBKDF2DefaultPseudoRandomFunction
                                                                  estimatedDelayInMilliseconds:PBKDF2DefaultDelayInMilliseconds];
   }
   return self;
