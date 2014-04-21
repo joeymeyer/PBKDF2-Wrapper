@@ -95,7 +95,7 @@
 
 - (void)calculateDerivedKey {
   dispatch_once(&_derivedKeyOnceToken, ^{
-    if (self.configuration.salt == nil) {
+    if (self.configuration.salt == nil || self.configuration.salt.length == 0) {
       return;
     }
     
