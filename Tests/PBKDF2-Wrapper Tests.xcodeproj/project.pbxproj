@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC28F9019051F230019AD02 /* PBKDF2ConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC28F8F19051F230019AD02 /* PBKDF2ConfigurationTests.m */; };
+		2BC28F9219051F3B0019AD02 /* PBKDF2ResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC28F9119051F3B0019AD02 /* PBKDF2ResultTests.m */; };
 		2BC84D5C1904F6870044F96F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC84D5B1904F6870044F96F /* XCTest.framework */; };
 		2BC84D5E1904F6870044F96F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC84D5D1904F6870044F96F /* Foundation.framework */; };
 		2BC84D601904F6870044F96F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC84D5F1904F6870044F96F /* UIKit.framework */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BC28F8F19051F230019AD02 /* PBKDF2ConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2ConfigurationTests.m; sourceTree = "<group>"; };
+		2BC28F9119051F3B0019AD02 /* PBKDF2ResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2ResultTests.m; sourceTree = "<group>"; };
 		2BC84D581904F6870044F96F /* PBKDF2-Wrapper Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBKDF2-Wrapper Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC84D5B1904F6870044F96F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2BC84D5D1904F6870044F96F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				2BC84D621904F6870044F96F /* Supporting Files */,
+				2BC28F8F19051F230019AD02 /* PBKDF2ConfigurationTests.m */,
+				2BC28F9119051F3B0019AD02 /* PBKDF2ResultTests.m */,
 			);
 			path = "PBKDF2-Wrapper Tests";
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC84D821904F76C0044F96F /* PBKDF2Defaults.m in Sources */,
+				2BC28F9019051F230019AD02 /* PBKDF2ConfigurationTests.m in Sources */,
 				2BC84D831904F76C0044F96F /* PBKDF2Result.m in Sources */,
+				2BC28F9219051F3B0019AD02 /* PBKDF2ResultTests.m in Sources */,
 				2BC84D811904F76C0044F96F /* PBKDF2Configuration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
