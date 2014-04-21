@@ -1,0 +1,5 @@
+workspace '../PBKDF2-Wrapper'
+xcodeproj 'PBKDF2-Wrapper Tests'
+inhibit_all_warnings!
+
+pod 'Expecta', '~> 0.3.0'
