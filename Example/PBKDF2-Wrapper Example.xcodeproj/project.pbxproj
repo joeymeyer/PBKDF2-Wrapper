@@ -33,7 +33,6 @@
 		2BE90BCB1901999F0059BC2A /* PWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWAppDelegate.h; sourceTree = "<group>"; };
 		2BE90BCC1901999F0059BC2A /* PWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWAppDelegate.m; sourceTree = "<group>"; };
 		2BE90BCE1901999F0059BC2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2BE90BD51901999F0059BC2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2BE90BF019019AEC0059BC2A /* PBKDF2Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2Result.h; sourceTree = "<group>"; };
 		2BE90BF119019AEC0059BC2A /* PBKDF2Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2Result.m; sourceTree = "<group>"; };
 		2BE90BF319019B090059BC2A /* PBKDF2Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2Configuration.h; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 				2BE90BBC1901999F0059BC2A /* Foundation.framework */,
 				2BE90BBE1901999F0059BC2A /* CoreGraphics.framework */,
 				2BE90BC01901999F0059BC2A /* UIKit.framework */,
-				2BE90BD51901999F0059BC2A /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
