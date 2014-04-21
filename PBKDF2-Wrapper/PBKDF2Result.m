@@ -104,17 +104,19 @@
     NSData *passwordData = [self.password dataUsingEncoding:NSUTF8StringEncoding];
     self.password = nil;
     
-    CCKeyDerivationPBKDF(kCCPBKDF2,
-                         [passwordData bytes],
-                         passwordData.length,
-                         [self.configuration.salt bytes],
-                         self.configuration.salt.length,
-                         CCPseudoRandomAlgorithmFromPBKDF2PseudoRandomFunction(self.configuration.pseudoRandomFunction),
-                         (uint)self.configuration.rounds,
-                         derivedKeyBytes,
-                         self.configuration.derivedKeyLength);
+    int result = CCKeyDerivationPBKDF(kCCPBKDF2,
+                                      [passwordData bytes],
+                                      passwordData.length,
+                                      [self.configuration.salt bytes],
+                                      self.configuration.salt.length,
+                                      CCPseudoRandomAlgorithmFromPBKDF2PseudoRandomFunction(self.configuration.pseudoRandomFunction),
+                                      (uint)self.configuration.rounds,
+                                      derivedKeyBytes,
+                                      self.configuration.derivedKeyLength);
     
-    _derivedKey = [NSData dataWithBytes:derivedKeyBytes length:self.configuration.derivedKeyLength];
+    if (result == 0) {
+      _derivedKey = [NSData dataWithBytes:derivedKeyBytes length:self.configuration.derivedKeyLength];
+    }
   });
 }
 
