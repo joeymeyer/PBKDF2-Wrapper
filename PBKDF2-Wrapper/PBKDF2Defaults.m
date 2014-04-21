@@ -9,7 +9,7 @@
 #import "PBKDF2Defaults.h"
 
 NSUInteger PBKDF2DefaultDerivedKeyLength                     = 32;
-NSUInteger PBKDF2DefaultDelayInMilliseconds                  = 100;
+uint32_t   PBKDF2DefaultDelayInMilliseconds                  = 100;
 NSUInteger PBKDF2DefaultSaltLength                           = 64;
 NSUInteger PBKDF2DefaultRounds                               = 1000;
 PBKDF2PseudoRandomFunction PBKDF2DefaultPseudoRandomFunction = PBKDF2PseudoRandomFunctionSHA1;

@@ -120,7 +120,7 @@ NSString * NSStringFromPBKDF2PseudoRandomFunction(PBKDF2PseudoRandomFunction pse
 - (instancetype)initWithPasswordLength:(NSUInteger)passwordLength
                       derivedKeyLength:(NSUInteger)derivedKeyLength
                             saltLength:(NSUInteger)saltLength
-          estimatedDelayInMilliseconds:(NSUInteger)delayInMilliseconds {
+          estimatedDelayInMilliseconds:(uint32_t)delayInMilliseconds {
   PBKDF2PseudoRandomFunction pseudoRandomFunction = PBKDF2DefaultPseudoRandomFunction;
   
   NSData *salt = PBKDF2SaltWithLength(saltLength);
