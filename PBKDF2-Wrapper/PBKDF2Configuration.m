@@ -12,8 +12,13 @@
 
 NSData * PBKDF2SaltWithLength(NSUInteger length) {
   NSMutableData *randomData = [NSMutableData dataWithLength:length];
-  SecRandomCopyBytes(kSecRandomDefault, (size_t)length, [randomData mutableBytes]);
-  return [NSData dataWithData:randomData];
+  int result = SecRandomCopyBytes(kSecRandomDefault, (size_t)length, [randomData mutableBytes]);
+  
+  if (result != 0) {
+    return nil;
+  } else {
+    return [NSData dataWithData:randomData];
+  }
 }
 
 PBKDF2PseudoRandomFunction PBKDF2PseudoRandomFunctionFromCCPseudoRandomAlgorithm(CCPseudoRandomAlgorithm algorithm) {

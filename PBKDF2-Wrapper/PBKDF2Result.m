@@ -95,6 +95,10 @@
 
 - (void)calculateDerivedKey {
   dispatch_once(&_derivedKeyOnceToken, ^{
+    if (self.configuration.salt == nil) {
+      return;
+    }
+    
     unsigned char derivedKeyBytes[self.configuration.derivedKeyLength];
     
     NSData *passwordData = [self.password dataUsingEncoding:NSUTF8StringEncoding];
