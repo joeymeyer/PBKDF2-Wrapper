@@ -1,0 +1,3 @@
+language: objective-c
+before_script: 'bundle exec rake test:prepare'
+script: 'bundle exec rake'
