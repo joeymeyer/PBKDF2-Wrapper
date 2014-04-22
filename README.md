@@ -7,7 +7,7 @@ PBKDF2-Wrapper provides a very simple Objective-C interface for the [CommonCrypt
 #### Derive Key
 Derive an encryption key from a password. `PBKDF2Result` automatically handles creating a secure random salt, and calibrating the number of rounds to take approximately 100ms to derive the key.
 
-```
+```objective-c
 NSString *password = ...;
 PBKDF2Result *result = [[PBKDF2Result alloc] initWithPassword:password];
 NSData *encryptionKey = result.derivedKey;
@@ -16,7 +16,7 @@ NSData *encryptionKey = result.derivedKey;
 #### Save Configuration
 Afterwards you can conveniently archive the configuration which includes information such the key length, salt, number of rounds, and the pseudo random function that was used when deriving the key.
 
-```
+```objective-c
 [NSKeyedArchiver archiveRootObject:result.configuration
                             toFile:@"/path/to/file"];
 ```
@@ -24,7 +24,7 @@ Afterwards you can conveniently archive the configuration which includes informa
 #### Load Saved Configuration
 Next launch you can grab the archived configuration file and use that when deriving the key.
 
-```
+```objective-c
 PBKDF2Configuration *configuration = [NSKeyedUnarchiver unarchiveObjectWithFile:@"/path/to/file"];
 
 NSString *password = ...;
@@ -36,7 +36,7 @@ NSData *encryptionKey = result.derivedKey;
 #### Explicit Configuration Creation
 In addition you can also explicitly create the configuration using a number of helpful initializers. Here is an example:
 
-```
+```objective-c
 NSData *salt = ...;
 
 [[PBKDF2Configuration alloc] initWithSalt:salt
@@ -54,7 +54,7 @@ NSData *salt = ...;
 
 To run tests pull down the repository and run the following commands:
 
-```
+```bash
 $ bundle install
 $ bundle exec rake test:prepare
 $ bundle exec rake
