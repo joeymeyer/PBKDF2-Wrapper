@@ -14,17 +14,13 @@ end
 
 namespace :test do
   task :prepare do
-    unless `which pod`.length > 0
-      puts "Please install CocoaPods to continue".red
-    else
-      sh("cd Tests && pod install")
-    end
+    sh('cd Tests && bundle exec pod install')
   end
 end
 
 desc "Run all PBKDF2-Wrapper Tests"
 task :test do
-  sh("xcodebuild -workspace PBKDF2-Wrapper.xcworkspace -scheme 'PBKDF2-Wrapper Tests' -sdk 'iphonesimulator' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
+  sh("xcodebuild -workspace PBKDF2-Wrapper.xcworkspace -scheme 'PBKDF2-Wrapper Tests' -sdk 'iphonesimulator' -configuration Release clean test | bundle exec xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
   if $?.success?
     puts "PBKDF2-Wrapper Tests passed".green
   else
