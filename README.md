@@ -52,6 +52,8 @@ NSData *salt = ...;
 
 ## Tests
 
+[![Build Status](https://travis-ci.org/joeymeyer/PBKDF2-Wrapper.svg?branch=master)](https://travis-ci.org/joeymeyer/PBKDF2-Wrapper)
+
 To run tests pull down the repository and run the following commands:
 
 ```bash
