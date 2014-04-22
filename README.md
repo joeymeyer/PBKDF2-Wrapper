@@ -45,6 +45,20 @@ NSData *salt = ...;
                      pseudoRandomFunction:PBKDF2PseudoRandomFunctionSHA256];
 ```
 
+## Installation
+
+1. Install via [CocoaPods](http://cocoapods.org/)
+	
+  ```ruby
+  pod 'PBKDF2-Wrapper'
+  ```
+
+2. Import the public header
+
+  ```objective-c
+  #import <PBKDF2-Wrapper/PBKDF2-Wrapper.h>
+  ```
+
 ##Requirements
 
 - iOS 5.0 and above
