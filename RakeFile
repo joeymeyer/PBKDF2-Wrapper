@@ -13,9 +13,12 @@ class String
 end
 
 namespace :test do
+  
+  desc "Prepare repository for tests to be run"
   task :prepare do
     sh('cd Tests && bundle exec pod install')
   end
+  
 end
 
 desc "Run all PBKDF2-Wrapper Tests"
