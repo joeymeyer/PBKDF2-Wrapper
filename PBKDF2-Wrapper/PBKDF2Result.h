@@ -40,7 +40,7 @@
 /**
  Default initializer which takes just a password as an argument.
  
- @discussion This will automatically generate a `configuration` with a key length of 32 bytes, a secure random salt, a calculated number of rounds to take approximately 100ms to derive the key, and SHA1 and the pseudo random fuction.
+ @discussion This will automatically generate a `configuration` with a key length of 32 bytes, a secure random salt, a calculated number of rounds to take approximately 100ms to derive the key, and SHA1 for the pseudo random fuction.
  
  @param password The password to compute PBKDF2 on.
  
