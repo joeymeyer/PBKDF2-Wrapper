@@ -57,7 +57,7 @@ NSData *NSDataFromHexString(NSString *hexString) {
   
   double delay = [end timeIntervalSinceDate:start] * 1000.0;
   
-  EXP_expect(delay).to.beCloseToWithin(PBKDF2DefaultDelayInMilliseconds, 25);
+  EXP_expect(delay).to.beCloseToWithin(PBKDF2DefaultDelayInMilliseconds, 40);
 }
 
 - (void)testGeneratedConfigurationRunsInLongEstimatedDelayTime {
