@@ -77,7 +77,7 @@ NSData *NSDataFromHexString(NSString *hexString) {
   
   double delay = [end timeIntervalSinceDate:start] * 1000.0;
   
-  EXP_expect(delay).to.beCloseToWithin(1000, 250);
+  EXP_expect(delay).to.beCloseToWithin(1000, 400);
 }
 
 - (void)testShouldCallCalculateDerivedKeyAutomaticallyWhenAccessingDerivedKeyForTheFirstTime {
