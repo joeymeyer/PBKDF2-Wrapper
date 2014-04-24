@@ -25,6 +25,7 @@ GEM
     cocoapods-downloader (0.5.0)
     cocoapods-try (0.2.0)
     colored (1.2)
+    colorize (0.7.2)
     escape (0.0.4)
     fuzzy_match (2.0.4)
     i18n (0.6.5)
@@ -43,5 +44,6 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods
+  colorize
   rake
   xcpretty
