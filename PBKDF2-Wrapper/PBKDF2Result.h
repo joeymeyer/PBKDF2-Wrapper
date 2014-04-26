@@ -24,6 +24,8 @@
  
  @discussion The first time this is called it will automatically call `calculateDerivedKey` if the key has not already been calculated.
  
+ @warning Will be `nil` if the configuration is not valid. For example if the salt is `nil` or empty, etc.
+ 
  @see PBKDF2Result -calculateDerivedKey
  */
 @property(nonatomic,copy,readonly) NSData *derivedKey;
