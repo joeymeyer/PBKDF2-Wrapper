@@ -57,7 +57,7 @@ NSData *NSDataFromHexString(NSString *hexString) {
   
   double delay = [end timeIntervalSinceDate:start] * 1000.0;
   
-  EXP_expect(delay).to.beCloseToWithin(PBKDF2DefaultDelayInMilliseconds, 40);
+  EXP_expect(delay).to.beCloseToWithin(PBKDF2DefaultDelayInMilliseconds, 50);
 }
 
 - (void)testGeneratedConfigurationRunsInLongEstimatedDelayTime {
@@ -77,7 +77,7 @@ NSData *NSDataFromHexString(NSString *hexString) {
   
   double delay = [end timeIntervalSinceDate:start] * 1000.0;
   
-  EXP_expect(delay).to.beCloseToWithin(1000, 400);
+  EXP_expect(delay).to.beCloseToWithin(1000, 500);
 }
 
 - (void)testShouldCallCalculateDerivedKeyAutomaticallyWhenAccessingDerivedKeyForTheFirstTime {
