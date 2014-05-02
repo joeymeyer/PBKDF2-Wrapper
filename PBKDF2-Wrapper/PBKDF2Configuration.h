@@ -40,6 +40,8 @@ typedef NS_ENUM(NSUInteger, PBKDF2PseudoRandomFunction) {
  
  @param length Length, in bytes, of the salt.
  
+ @warning Will return `nil` if there is an error retrieving random data.
+ 
  @return The newly created secure random salt.
  */
 NSData * PBKDF2SaltWithLength(NSUInteger length);
