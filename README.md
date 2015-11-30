@@ -64,8 +64,9 @@ NSData *salt = ...;
 
 ##Requirements
 
-- iOS 5.0 and above
-- Should work on OSX 10.7 and above, but has not been tested
+- iOS 6.0
+- OSX 10.8
+- watchOS 2.0
 
 ## Tests
 
