@@ -7,7 +7,9 @@ Pod::Spec.new do |s|
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Joey Meyer" => "jmeyer41@gmail.com" }
   s.social_media_url = "http://twitter.com/joey_meyer"
-  s.platform         = :ios, "6.0"
+  s.ios.deployment_target     = "6.0"
+  s.osx.deployment_target     = '10.8'
+  s.watchos.deployment_target = '2.0'
   s.source           = { :git => "https://github.com/joeymeyer/PBKDF2-Wrapper.git", :tag => "v#{s.version}" }
   s.source_files     = "PBKDF2-Wrapper/*.{h,m}"
   s.requires_arc     = true
