@@ -1,7 +1,8 @@
 # PBKDF2-Wrapper
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/PBKDF2-Wrapper/badge.png)](http://cocoadocs.org/docsets/PBKDF2-Wrapper)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/PBKDF2-Wrapper/badge.png)](http://cocoadocs.org/docsets/PBKDF2-Wrapper)
+[![Version](https://img.shields.io/cocoapods/v/PBKDF2-Wrapper.svg?style=flat)](http://cocoadocs.org/docsets/PBKDF2-Wrapper)
+[![Platform](https://img.shields.io/cocoapods/p/PBKDF2-Wrapper.svg?style=flat)](http://cocoadocs.org/docsets/PBKDF2-Wrapper)
+[![License](https://img.shields.io/cocoapods/l/PBKDF2-Wrapper.svg?style=flat)](http://cocoadocs.org/docsets/PBKDF2-Wrapper)
 
 PBKDF2-Wrapper provides a very simple Objective-C interface for the [CommonCrypto](https://developer.apple.com/library/mac/documentation/security/conceptual/cryptoservices/GeneralPurposeCrypto/GeneralPurposeCrypto.html#//apple_ref/doc/uid/TP40011172-CH9-SW1) implementation of the [PBKDF2](http://blog.agilebits.com/2011/05/05/defending-against-crackers-peanut-butter-keeps-dogs-friendly-too/) algorithm.
 
