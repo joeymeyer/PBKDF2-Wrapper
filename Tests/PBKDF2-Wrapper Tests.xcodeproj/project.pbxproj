@@ -37,7 +37,8 @@
 		2BC84D7F1904F76C0044F96F /* PBKDF2Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2Result.h; sourceTree = "<group>"; };
 		2BC84D801904F76C0044F96F /* PBKDF2Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2Result.m; sourceTree = "<group>"; };
 		5C3BF75AE44D436CB9BA5178 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB59A8FAAC044CC9BB3F5215 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		74C1FAF3376DA56BFF42ACE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		903166EAA41721975F5440C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,7 @@
 				2BC84D611904F6870044F96F /* PBKDF2-Wrapper Tests */,
 				2BC84D5A1904F6870044F96F /* Frameworks */,
 				2BC84D591904F6870044F96F /* Products */,
-				CB59A8FAAC044CC9BB3F5215 /* Pods.xcconfig */,
+				972E2F42D9597460AE5EEB27 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +129,15 @@
 			path = "../PBKDF2-Wrapper";
 			sourceTree = "<group>";
 		};
+		972E2F42D9597460AE5EEB27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				903166EAA41721975F5440C3 /* Pods.debug.xcconfig */,
+				74C1FAF3376DA56BFF42ACE6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +150,7 @@
 				2BC84D551904F6870044F96F /* Frameworks */,
 				2BC84D561904F6870044F96F /* Resources */,
 				BD64ACC22DC84D9B8ABD2C38 /* Copy Pods Resources */,
+				3083CA15DA1C15ED1E9FB280 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +198,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3083CA15DA1C15ED1E9FB280 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A6DE9461FEBC4A9A82A0D22A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -260,7 +286,7 @@
 		};
 		2BC84D6B1904F6870044F96F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB59A8FAAC044CC9BB3F5215 /* Pods.xcconfig */;
+			baseConfigurationReference = 903166EAA41721975F5440C3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -308,7 +334,7 @@
 		};
 		2BC84D6C1904F6870044F96F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB59A8FAAC044CC9BB3F5215 /* Pods.xcconfig */;
+			baseConfigurationReference = 74C1FAF3376DA56BFF42ACE6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
