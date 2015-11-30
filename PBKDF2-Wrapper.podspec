@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PBKDF2-Wrapper"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "An Objective-C interface for the PBKDF2 implementation in CommonCrypto."
   s.description      = "PBKDF2-Wrapper provides a very simple Objective-C interface for the CommonCrypto implementation of the PBKDF2 algorithm."
   s.homepage         = "https://github.com/joeymeyer/PBKDF2-Wrapper"
