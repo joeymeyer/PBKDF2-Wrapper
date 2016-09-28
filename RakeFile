@@ -11,7 +11,7 @@ end
 
 desc "Run all PBKDF2-Wrapper Tests"
 task :test do
-  sh("xcodebuild -workspace PBKDF2-Wrapper.xcworkspace -scheme 'PBKDF2-Wrapper Tests' -sdk 'iphonesimulator' -configuration Release clean test | bundle exec xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
+  sh("xcodebuild -workspace PBKDF2-Wrapper.xcworkspace -scheme 'PBKDF2-Wrapper Tests' -sdk 'iphonesimulator' -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0' -configuration Release clean test | bundle exec xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
   if $?.success?
     puts "PBKDF2-Wrapper Tests passed".green
   else
